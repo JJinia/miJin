@@ -26,9 +26,14 @@ class MainActivity : AppCompatActivity() {
 
         inputNumber(1, 2)
         inputText("hello", "wold")
+
         calculateToWhen(3, 4, "/")
         calculateToIf(6, 4, "/")
+
         sumBetweenTwoNumbers(1, 4)
+        sumOddNum(1, 10)
+
+        listSum()
     }
 
     private fun inputNumber(number01: Int, number02: Int) {
@@ -73,5 +78,26 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    private fun sumOddNum(number01: Int, number02: Int) {
+        var sum: Int = 0
+        var oddSum: Int = 0
+        for (i in number01..number02) {
+            if (i % 2 == 0) {
+                sum += i
+            } else
+                oddSum += i
 
+        }
+        println("입력된 짝수의 합은$sum 입니다")
+        println("입력된 홀수의 합은$oddSum 입니다")
+    }
+
+    private fun listSum() {
+        val listAdd = listOf<Int>(10, 20, 30)
+        var listSum: Int = 0
+        for (element in listAdd) {
+            listSum += element
+        }
+        println("입력된 리스트의 합은$listSum")
+    }
 }
