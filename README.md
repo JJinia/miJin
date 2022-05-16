@@ -24,6 +24,8 @@
      > 리스트를 만들 때 사용하는 함수
      > val list= listOf(1,2,3) 형식으로 선언
 
+
+
 2. study02
   - View의 종류에 대해서 알아보기 (View : 화면에 보이는 모든 요소의 최상위 클래스) 
      > TextView
@@ -82,7 +84,23 @@
       >FrameLayout
         = 액자처럼 배치 
         
+        
+        
 3. study03
-  -
+  - 지역변수 : 일정한 또는 지정된 지역에서만 사용할 수 있는 특정한 변수
+  
+  - 전역변수 : 모든 영역에서 사용할 수 있는 변수
+  
+  - Collection 종류 < Immutable (불변) , Mutable (가변)
+      > List 특징 : 데이터를 저장하거나 삭제될 때 순서를 지킴 
+             종류 : mmutable = listOf / Mutable = mutableListOf
+     
+      > Map 특징 : key, value가 쌍으로 지정 key는 중복 불가능 / value는 중복 가능
+            종류 : Immutable = mapOf / Mutable = mutableMapOf
+     
+      > Set 특징 : 데이터의 중복이 불가능 , 순서가 정해져 있지 않음
+            종류 : Immutable = setOf / Mutable = mutableSetOf
+            
+            
 4. study04
   -
