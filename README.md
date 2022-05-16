@@ -25,7 +25,63 @@
      > val list= listOf(1,2,3) 형식으로 선언
 
 2. study02
-  -
+  - View의 종류에 대해서 알아보기 (View : 화면에 보이는 모든 요소의 최상위 클래스) 
+     > TextView
+        = 텍스트를 표시
+        = 속성 : - text 텍스트를 정함
+                 - testSize 텍스트의 크기
+                 - textStyle 텍스트의 스타일을 정함
+                 - textColor 텍스트의 색깔 등등...
+     > EditText
+        = 텍스트를 입력 받는 위젯
+        = 속성 : - gravity 텍스트가 배치 될 위치
+                 - inputType 입력 받는 값의 형태 (text,number)
+                 - hint 입력전에 볼 수 있는 텍스트
+              
+     > ImageView
+        = 지정한 이미지를 보여줌
+        = 색만 지정하여 칠 할 수도 있음
+        = 속성 : - background 이미지 뷰의 배경색
+                 - src 선택한 이미지를 뷰에 담음
+     > Button
+        = 클릭하여 입력값을 주는 위젯
+        = 속성 : - backgroundTint 버튼의 색상
+                 - text 버튼에 쓰여 질 텍스트
+                 - textAllCaps 쓰여진 텍스트를 대문자로 표시
+     > ImageButton
+        = 버튼에 이미지를 담을 수 있음
+        = 속성 : - scr 버튼에 쓰여질 이미지 지정
+                 -  background 배경색
+                 -  scalType = "fitCenter" 사이즈가 맞지 않는 이미지의 크기를 자동으로 조절
+
+    - Layout의 종류에 대해서 알아보기
+      >LinearLayout
+        = 가로(수평) 나 세로(수직) 방향으로 일열로 나열 할 때 사용
+        = 뷰의 위치를 지정하지 않아도 중첩되지 않고 자동으로 나열
+        = 속성 : - orientation > horizontal, vertical 나열 방향
+                 - weight > 가중치(비율)
+      
+      >RelativeLayout
+        = 뷰를 특정 뷰나 부모의 위치에 맞게 배치 가능
+        = 연결고리가 있어 서로 연결되어 위치가 결정
+        = 속성 : 1. 뷰로 설정 
+                    - layout_toRightOf (leftOf) = "@" 뷰의 오른쪽(왼쪽)
+                    - layout_aboveOf (belowOf)  "@" 뷰의 위(아래)
+                    - layout_tostartOf (EndOf)  "@" 뷰의 시작부분(끝부분)
+                    - layout)alignRight (Lef,Top,Bottom,Baseline) "@" 뷰의 오른쪽으로 정렬
+                                                                      (왼쪽,위쪽,아래쪽,기본라인)
+                2. trhe/false 값으로 설정
+                    - layout_alignparentRight(Left,Top...) ="true" 부모의 오른쪽/왼쪽/위쪽/아래쪽
+                    - layout_centerinParent="true" 부모의 가운데
+                    - layout_centerHorizontal(Vertical) ="true" 부모의 수평가운데/수직가운데
+      
+      >ConstraintLayout
+        = 뷰의 위치를 강제적으로 지정
+        = 속성 : - layout_constraint[위치1]_to[위치2]Of = "[대상]"
+  
+      >FrameLayout
+        = 액자처럼 배치 
+        
 3. study03
   -
 4. study04
