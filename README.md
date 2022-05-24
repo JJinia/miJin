@@ -106,11 +106,8 @@
   -
   
 5. MVVM
-  - 구조 :         (Data Vinding)                 (데이터 응답)
-                     화면표시<---------(가공후 저장)<-------
-          Action ---> view ----------> viewModel ------> model ->
-                           (엑션 전달)           (데이터요청)
-  
+  ![image](https://user-images.githubusercontent.com/104710526/170035269-5166f72e-5c4a-489f-a781-29b2d6575764.png)
+
   - 특징 : Connand 패턴과 Data Binding 두가지 패턴을 사용하여 구현
            view 와 view Model 사이의 의존성을 없앰
            view Model과 View 는 1:n 관계
@@ -127,3 +124,5 @@
     > 다방향성 지원
     > 아이템 리스너가 없어 onClicklisner로 직접 구현
     > 아이템 애니메이션 지원
+    
+7. 의존성
