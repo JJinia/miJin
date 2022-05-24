@@ -25,6 +25,15 @@ class RecyclerViewActivity : AppCompatActivity() {
             startActivity(Intent(this, MainActivity::class.java))
         }
 
-        binding.recyclerView.adapter = RecyclerViewAdapter(this, gameList)
+        binding.recyclerView.adapter = RecyclerViewAdapter(this, itemClickListener, gameList)
+    }
+
+
+    private val itemClickListener = object : RecyclerViewAdapter.OnItemClickListener {
+        override fun onItemViewClick() {
+        }
+
+        override fun onItemClick(gameName: String) {
+        }
     }
 }

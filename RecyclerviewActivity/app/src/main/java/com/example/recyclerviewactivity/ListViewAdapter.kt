@@ -34,5 +34,4 @@ class ListViewAdapter(val context: Context, val gameList: ArrayList<Game>) : Bas
 
         return binding.root
     }
-
 }
