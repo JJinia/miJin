@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">bmiProject</string>
+    <string name="my_height">신장</string>
+    <string name="my_weight">체중</string>
+    <string name="btn_input">확인하기</string>
+    <string name="bmi_title">Bmi</string>
+    <string name="bmi_result">Result</string>
+</resources>
